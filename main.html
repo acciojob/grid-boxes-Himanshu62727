@@ -4,70 +4,88 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
 	<style>
-
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: green;
-			color: white;
-			font-size: 2.5rem;
-			
-		}
-		#grid-container {
-			display: grid;
-			/* grid-template-columns: repeat(4, 1fr); */
-			grid-template-rows: 100px 100px 100px 100px 100px;
-		}
-
-		#grid item {
-			grid-template-rows: span 4/ auto;
-		}
-
-		.grid-item {
-			border: 3px solid white;
-			border-radius: 2px;
-		}
-
-		.item1 {
-			grid-column-start: 1;
-			grid-column-end: 5;
-		}
-
-		.item2 {
-			grid-row-start: 2;
-			grid-row-end: 6;
-		}
-
-		.item4 {
-			grid-column-start: 3;
-			grid-column-end: 5;
-		}
-
-		.item5 {
-			grid-column-start: 2;
-			grid-column-end: 4;
-		}
-
-		.item10 {
-			grid-column-start: 2;
-			grid-column-end: 5;
-		} 
+		#grid {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(4, 242.5px);
+	grid-template-rows: repeat(5, 124px);
+}
+.item1 {
+	grid-column: span 4 / auto;
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item2 {
+	grid-row: span 4 / auto;
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item3 {
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item4 {
+	grid-column: span 2 / auto;
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item5 {
+	grid-column: span 2 / auto;
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item6 {
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item7 {
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item8 {
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item9 {
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
+.item10 {
+	grid-column: span 3 / auto;
+	background-color: green;
+	/* border: 1px solid black; */
+	text-align: center;
+}
 	</style>
 
   <body>
-    <body id="grid-container">
-      <div class = "grid-item item1">1</div>
-      <div class = "grid-item item2">2</div>
-      <div class = "grid-item item3">3</div>
-      <div class = "grid-item item4">4</div>
-      <div class = "grid-item item5">5</div>
-      <div class = "grid-item item6">6</div>
-      <div class = "grid-item item7">7</div>
-      <div class = "grid-item item8">8</div>
-      <div class = "grid-item item9">9</div>
-      <div class = "grid-item item10">10</div>
+    <body>
+    <body id="grid">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+      <div class="item8">8</div>
+      <div class="item9">9</div>
+      <div class="item10">10</div>
     </body>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
